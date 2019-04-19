@@ -1,0 +1,4 @@
+<li *ngFor="let article of this.articles">
+  <app-article [article]="article"></app-article>
+  <button (click)="deleteArticle(article.id)">Delete</button>
+</li>
