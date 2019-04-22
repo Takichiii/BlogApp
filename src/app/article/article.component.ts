@@ -17,10 +17,13 @@ export class ArticleComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.subscribe(params => {
-      this.articleService.getArticle(params.id).subscribe(article => {
-        this.article = article;
-      });
+      if (params.id !=null) {
+        this.articleService.getArticle(params.id).subscribe(article => {
+          this.article = article;
+        });
+      }
     })
   }
+
 
 }

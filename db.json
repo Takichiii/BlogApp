@@ -35,30 +35,6 @@
       "title": "Angular component",
       "content": "Angular component looks awesome!",
       "authors": "Orangefire"
-    },
-    {
-      "id": 7,
-      "title": "Angular service",
-      "content": "I read something about angular service, i will try it soon",
-      "authors": "Orangefire"
-    },
-    {
-      "title": "Fake Title",
-      "content": "dddd",
-      "authors": "me",
-      "id": 8
-    },
-    {
-      "title": "Fake Title",
-      "content": "dd",
-      "authors": "me",
-      "id": 9
-    },
-    {
-      "title": "ddd",
-      "content": "dkdk",
-      "authors": "mee",
-      "id": 10
     }
   ]
 }

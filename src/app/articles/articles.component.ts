@@ -1,6 +1,5 @@
-import {Component, EventEmitter, Injectable, Input, OnInit, Output} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {ArticleService} from "../services/article.service";
-import index from "@angular/cli/lib/cli";
 
 @Component({
   selector: 'app-articles',
@@ -12,6 +11,8 @@ export class ArticlesComponent implements OnInit {
   articles: any[];
   @Input()
   id: string;
+  @Input()
+  searchText: string;
 
   loadArticles() {
     this.articleService.getArticles().subscribe(value => {
@@ -36,4 +37,9 @@ export class ArticlesComponent implements OnInit {
     this.loadArticles();
   }
 
+  onSearchChange(searchText : string) {
+    this.articleService.filterArticles(searchText.replace(/ /g,"%20")).subscribe(value => {
+      this.articles = value;
+    });
+  }
 }
