@@ -1,0 +1,43 @@
+#articles-list{
+  list-style: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+.grid-item {
+  padding: 20px;
+}
+
+.grid-item:hover {
+  background-color: antiquewhite;
+}
+
+li {
+  float: left;
+  color: black;
+}
+
+li a {
+  display: block;
+  color: #4CAF50;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+input[type=search] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}

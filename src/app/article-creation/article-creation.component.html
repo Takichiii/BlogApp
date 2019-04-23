@@ -1,18 +1,32 @@
-<h3><i>Create your article</i></h3>
-<form [formGroup]="articleForm" (ngSubmit)="createArticle()">
-  <div class="form-group">
-    <label class="center-block">title:
-      <input class="form-control" formControlName="title">
-    </label>
-    <br />
-    <label class="center-block">content:
-      <textarea class="form-control" formControlName="content"></textarea>
-    </label>
-    <br />
-    <label class="center-block">authors:
-      <input class="form-control" formControlName="authors">
-    </label>
-    <br />
-    <button class="btn btn-success" [disabled]="articleForm.invalid" type="submit" routerLink="/articles" routerLinkActive="active">Save</button>
-  </div>
-</form>
+<h3>Create a new article</h3>
+<div class="container">
+  <form [formGroup]="articleForm" (ngSubmit)="createArticle()">
+    <div class="row">
+      <div class="col-25">
+        <label for="title">Title :</label>
+      </div>
+      <div class="col-75">
+        <input class="form-control" type="text" id="title" formControlName="title" placeholder="Title..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="authors">Authors :</label>
+      </div>
+      <div class="col-75">
+        <input class="form-control" type="text" id="authors" formControlName="authors" name="authors" placeholder="Authors names..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="content">Content</label>
+      </div>
+      <div class="col-75">
+        <textarea class="form-control" id="content" name="content" formControlName="content" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <button [disabled]="articleForm.invalid" type="submit" routerLink="/articles" routerLinkActive="active">Save</button>
+    </div>
+  </form>
+</div>

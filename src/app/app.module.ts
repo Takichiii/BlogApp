@@ -14,7 +14,8 @@ import {RouterModule, Routes} from "@angular/router";
 const appRoutes: Routes = [
   { path: 'create', component: ArticleCreationComponent },
   { path: 'articles', component: ArticlesComponent },
-  { path: 'articles/:id', component: ArticleComponent }
+  { path: 'articles/:id', component: ArticleComponent },
+  { path: '', component: ArticlesComponent },
 ]
 
 @NgModule({

@@ -16,8 +16,8 @@ export class ArticleService {
     return this.http.delete<void>(`${this.baseUrl}/${id}`);
   }
 
-  addArticle(newArticle : Article): Observable<any> {
-    return this.http.post<void>(this.baseUrl, newArticle);
+  addArticle(newArticle : any): Observable<any> {
+    return this.http.post<any>(this.baseUrl, newArticle);
   }
 
   getArticle(id: string) : Observable<any> {

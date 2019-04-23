@@ -7,33 +7,27 @@
       "authors": "Jihane Sbaytti"
     },
     {
-      "id": 2,
-      "title": "Angular component",
-      "content": "Angular component looks awesome!",
-      "authors": "Orangefire"
-    },
-    {
       "id": 3,
-      "title": "My First Article",
-      "content": "Hello World",
+      "title": "Les 16 fruits et légumes d’avril",
+      "content": "Entre les farces du 1er avril, les jours qui rallongent et le printemps qui arrive : la bonne humeur se fait ressentir ! Pour accompagner l’arrivée des beaux jours, le mois d’avril laisse place à de nouveaux fruits et légumes de saison,...",
       "authors": "Jihane Sbaytti"
     },
     {
       "id": 4,
-      "title": "Angular component",
-      "content": "Angular component looks awesome!",
+      "title": "Quel est le meilleur pain pour la santé ?",
+      "content": "Ah, la France et le pain, une grande histoire d’amour ! Les Français consomment en moyenne 120g par jour soit…44 kgs par an ! Avec une quantité aussi importante, il est donc nécessaire de se poser la question de l’impact du pain sur notre santé...",
       "authors": "Orangefire"
     },
     {
       "id": 5,
-      "title": "My First Article",
-      "content": "Hello World",
+      "title": "Thé ou café ?",
+      "content": "Si les Français préfèrent le café, cela n’a pas empêché la consommation de thé de doubler en 20 ans. Mais ces deux boissons ont-elles les même bienfaits ? Le nutritionniste Anthony Berthou nous aide à y voir plus clair.   ",
       "authors": "Jihane Sbaytti"
     },
     {
       "id": 6,
-      "title": "Angular component",
-      "content": "Angular component looks awesome!",
+      "title": "Peut-on être végétarien et en bonne santé ?",
+      "content": "Le régime végétarien séduit de plus en plus de monde : 4% des français seraient déjà végétariens. Mais, ce mode d’alimentation est en proie à des débats houleux entre ceux qui y voient l’alimentation du futur..",
       "authors": "Orangefire"
     }
   ]

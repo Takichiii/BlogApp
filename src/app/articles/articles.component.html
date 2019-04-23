@@ -1,5 +1,9 @@
-<p>Search: <input type="text" class="form-control" (input)="onSearchChange($event.target.value)"></p>
-<li *ngFor="let article of this.articles">
+<input type="search" class="form-control" placeholder="Search in articles.." (input)="onSearchChange($event.target.value)">
+<div class="grid-container">
+<li id="articles-list" *ngFor="let article of this.articles">
+  <div class="grid-item">
   <app-article [article]="article"></app-article>
   <button (click)="deleteArticle(article.id)">Delete</button>
+  </div>
 </li>
+</div>
